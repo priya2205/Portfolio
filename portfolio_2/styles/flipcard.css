@@ -1,0 +1,41 @@
+.flip-card{
+    background-color: transparent;
+    width:465px;
+    height:350px;
+
+    border-radius:25px ;
+    perspective: 1000px;/* for 3 D effect*/
+
+}
+.flip-card-inner{
+    position:relative;
+    width:100%;
+    height: 100%;
+    text-align:center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius:25px;
+}
+.flip-card:hover .flip-card-inner{
+    transform:rotateY(180deg);
+}
+.flip-card-front, .flip-card-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+}
+/* style if image is missing */
+.flip-card-front{
+    background-color:#bbb;
+    color:black;
+
+}
+.flip-card-back{
+    background-color: rgba(175, 103, 216, 0.76);
+    color:white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transform:rotateY(180deg) ;
+}
+

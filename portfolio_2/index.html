@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio theme 2</title>
+    <link href='https://fonts.googleapis.com/css?family=Niconne' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/navbar.css" >
+    <link rel="stylesheet" href="styles/imageslide.css" >
+    <link rel="stylesheet" href="styles/profilecard.css" >
+    <link rel="stylesheet" href="styles/flipcard.css" >
+</head>
+<body>
+    
+  <div class="container"> 
+    <div class="header">
+        <span>PORTFOLIO</span>
+    </div>    
+      <div class="sidebar">
+         <ul>
+            <li class="nav-items">
+               <a href="">Home</a> 
+               <a href="columncards/index.html">My Works </a> 
+               <a href="gallery.html">Gallery </a> 
+               <a href="#contact">Contact</a> 
+            </li>
+         </ul>
+     </div>
+     <!--sidebar ends-->
+     <div class="content"></div>
+     <!-- image slideshow-->
+     <div class="image-slideshow">
+         <div class="slides">
+             <div class="numbertext">1/4</div>
+                 <img src="images/1.jpg" alt="1" style="width: 100%;height:250px;">
+             
+         </div>
+         <div class="slides">
+            <div class="numbertext">2/4</div>
+                <img src="images/2.jpg" alt="2" style="width: 100%;height:250px;">
+            
+        </div>
+        <div class="slides">
+            <div class="numbertext">3/4</div>
+                <img src="images/3.jpg" alt="3" style="width: 100%;height:250px;">
+            
+        </div>
+        <div class="slides">
+            <div class="numbertext">4/4</div>
+                <img src="images/4.jpg" alt="" style="width: 100%;height:250px;">
+            
+        </div>
+    
+
+     <!--next and prev btns-->
+     <a class="prev" onclick="plusSlides(-1)" id="-1">&#10094</a>
+     <a class="next"  onclick="plusSlides(1)"id="1">&#10095</a>
+     <!--next and prev btns ends-->
+
+     <!--image text-->
+        <div class="caption-container">
+            <p id ="caption"></p>
+        </div>  
+
+      <!--thumbnail images-->
+      <div class="row">
+          <div class="column">
+              <img  class ="demo cursor" onclick="currentSlide(1)" src="images/1.jpg" alt="Obstacle Detction Robot" style="width:100%;height:130px;">
+          </div>
+          <div class="column">
+            <img  class ="demo cursor" id="2" onclick="currentSlide(2)" src="images/2.jpg" alt="Line Follower" style="width:100%;height:130px;">
+          </div>
+          <div class="column">
+            <img  class ="demo cursor" id="3" onclick="currentSlide(3)" src="images/3.jpg" alt="Automatic Irrigation System" style="width:100%;height:130px;">
+          </div>
+          <div class="column">
+            <img  class ="demo cursor" id="4" onclick="currentSlide(4)" src="images/4.jpg" alt="Smart Parking System" style="width:100%;height:130px;">
+         </div>
+      </div>  
+</div>   
+  <div class="space"></div>
+    <div class="main">
+            
+          <div class="profile-card">
+              <div class="card">
+                  <div class="row-card">
+                      <div class="column-card">
+                          <div class="person-info">
+                             <h1 style="font-size: 28px;font-family:cursive;font-weight:400">I'm Electronics Engineer</h1>
+                              <p class="text"></p> 
+                          </div>
+                      </div>
+                      <div class="column-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/profile.png" alt="image" style="width: 465px;height:350px"></img>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1> Jennifer </h1>
+                                    <p style="font-size:22px;text-align:center;"> Electronic Engineer</p>
+                                    <p style= "font-size:22px;text-align:center;">Date of Birth : 14/05/1995</p>
+                                    <p style= "font-size:22px;text-align:center;">Mobile Number: 8807832156</p>
+                                    <p style= "font-size:22px;text-align:center;">Email-Id : jennifer1412@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        <div id="contact">
+            <section class ="contact">
+                <p style="color: white;font-size:40px;letter-spacing:0.08em;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Contact</p>
+                <div class="content-small"></div>
+                <div class="multibox">
+                    <div class="small-box"> <a href="#" class="fa fa-facebook"></a></div> <div class="tab"></div>
+                    <div class="small-box"> <a href="#" class="fa fa-twitter"></a></div>
+                    <div class="small-box"> <a href="#" class="fa fa-linkedin"></a></div>
+         
+                </div> 
+                  <div class="content-small"></div>
+             </section> 
+        </div>
+    </div>
+    <script src="scripts/imagegallery.js"></script>
+</body>
+</html>
